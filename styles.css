@@ -1,0 +1,44 @@
+@media screen and (max-aspect-ratio: 4/3) {
+    .inner {
+        height: 100%;
+        width: auto !important;
+    }
+    .img {
+       height: 100%;
+       width: auto !important;
+    }
+}
+.container {
+  display: inline-block;
+  overflow: hidden;
+}
+#ctn1 {
+  width: 100%;
+  height: 100%;
+}
+.inner {
+  width: 100%;
+  position: relative;
+  animation: scroll 5s infinite linear;
+  display: inline-block;
+}
+.inner:after {
+  content: "";
+  height: 500%;
+  width: 100%;
+  left: 0px;
+  position: absolute;
+  background-image: url("21.jpg");
+  /* background-size: 100% 20%; */
+  background-size: 100% 20%;
+}
+.img {
+  width: 100%;
+}
+@keyframes scroll {
+  from {transform: translateY(-100%);}
+    to {transform: translateY(-200%);}
+}
+body{
+  margin: 0;
+}
